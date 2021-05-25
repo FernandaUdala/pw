@@ -8,13 +8,12 @@ let vapidKeys = {
 push.setVapidDetails('fernanda:fernanda.amorim@claravista.com.br', vapidKeys.publicKey, vapidKeys.privateKey)
 
 let sub = {
-    endpoint:
-    "https://fcm.googleapis.com/fcm/send/cTPTsJ9ZWIM:APA91bFNYkihSu4DjVMTx1-VsUDcPiwyUhI3YNOK7pDwEq_YquQrt7G7zZppdnuEfy06kdmnWlVCExN9R5u1XP4xcCe2yDTISXWdwMnTff7BQPj3dtyuIzxam6ibJ1N9iAG6HQYcY20s",
+    endpoint:"https://updates.push.services.mozilla.com/wpush/v2/gAAAAABgr…Ychy5RN2cEgRwoPlDo8cp0w3jr3-PPhctQd-0nSLOQ9SQh4W1Lv0Ey0SWi48",
     expirationTime:null,
     keys:{
-        p256dh:"BH93dPRGNlFObru9LVg3oA3Ss8z3sZV_GiayFZN1TTon2gTAi0FXJQNS09UkQ8-fSwBLjf-LdYnv27r3SdSebfI",
-        auth:"4xQYo10MqJcC_mHtl9V69Q"
+        auth:"ILSjwq3iQR0cvGtgN7zBHg",
+        p256dh:"BC_ti4K4hCiB-R7x1cEG3tptendkFFnuGzG91jduv6TeDxvnWnVoWx2BPqB2mC2a_2e0kcTiMpj0jvtiHf8pVmE"
     }
-}; 
+};
 
 push.sendNotification(sub, 'test message')
